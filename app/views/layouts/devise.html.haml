@@ -1,0 +1,18 @@
+!!!
+%html
+  %head
+    %title Todo
+    = stylesheet_link_tag    "application", media: "all"
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+  %body
+    .row-fluid
+      .span10.offset1
+        .hero-unit.text-center
+          %h1
+            ToDo
+          %p
+            Welcome to the tutorial's ToDo application
+    .row-fluid
+      .span4.offset4
+        = yield
